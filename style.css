@@ -6,10 +6,17 @@ body {
     align-items: center;
     margin: 90px;
     padding: 20px;
+    background-image: url(photo-1555465910-31f7f20a184d.jpeg);
+    background-size: cover;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .input-section {
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
 }
 
 input[type="text"] {
@@ -17,6 +24,7 @@ input[type="text"] {
     width: 250px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 button {
@@ -27,6 +35,7 @@ button {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    white-space: nowrap;   
 }
 
 button:hover {
@@ -34,7 +43,8 @@ button:hover {
 }
 
 .list-section {
-    width: 300px;
+    width: 100%;
+    max-width: 400px;
 }
 
 ul {
@@ -48,4 +58,62 @@ li {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    .list-section {
+        width: 100%;
+    }
+
+    ul {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 688px) {
+    body {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .input-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .input-section input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .input-section button {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+ 
+    .input-section button:last-child {
+        margin-bottom: 0;
+    }
+
+    .list-section {
+        max-width: 100%;
+    }
 }

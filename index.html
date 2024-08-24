@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-        <div class="input-section">
-            <input type="text" id="user-input" placeholder="Enter something...">
-            <button onclick="addToList()">Add to List</button>
-        </div>
-        <div class="list-section">
-            <ul id="numbered-list"></ul>
-        </div>
-        <script src="script.js"></script>
-   
-    
+    <div class="input-section">
+        <input type="text" id="user-input" placeholder="Enter something...">
+        <button onclick="addToList()">Add to List</button><button id="btn" onclick="dltAll()">Delete All</button>
+    </div>
+    <div class="list-section">
+        <ul id="numbered-list"></ul>
+    </div>
 
 
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
